@@ -7,11 +7,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * Created by hbh5274@gmail.com on 2021-04-23
- * Github : http://github.com/bhhan5274
- */
-
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/v1/shops")
