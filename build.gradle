@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
+    }
+}
+
+subprojects {
+    apply plugin: "java"
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+        jcenter()
+
+        dependencies {
+            compileOnly "org.projectlombok:lombok:$lombokVersion"
+            annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+        }
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}

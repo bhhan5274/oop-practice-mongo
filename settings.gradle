@@ -1,0 +1,4 @@
+rootProject.name = 'mongo-exercise'
+include 'mongo-common'
+include 'example'
+

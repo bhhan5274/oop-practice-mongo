@@ -1,0 +1,16 @@
+{
+  "properties": [
+    {
+      "name": "mongo.database",
+      "type": "java.lang.String",
+      "description": "default DatabaseName.",
+      "defaultValue": false
+    },
+    {
+      "name": "mongo.uri",
+      "type": "java.lang.String",
+      "description": "mongo Database uri.",
+      "defaultValue": false
+    }
+  ]
+}
